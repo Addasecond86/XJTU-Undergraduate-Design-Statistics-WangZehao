@@ -1,4 +1,4 @@
-# XJTU Undergraduate Design Statistics Wang Zehao
+# XJTU Undergraduate Design Statistics WangZehao
 
 ## 西安交通大学 数学学院 统计71 王泽昊
 
