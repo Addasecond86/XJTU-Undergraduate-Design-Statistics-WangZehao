@@ -1,8 +1,13 @@
-\documentclass[11pt, twocolumn]{ctexart}
+\documentclass[10pt, twocolumn]{ctexart}
 
-\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=3.5cm]{geometry}
+\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{mathptmx}
+\usepackage{amsmath}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\graphicspath{{images/}}
 \usepackage[backend=biber, style=gb7714-2015, citestyle=authoryear, hyperref=auto]{biblatex}
 \addbibresource{reference.bib}
 
@@ -25,5 +30,10 @@
 
     \input{Intro.tex}
 
+    \input{Theory.tex}
+
+    \clearpage
+    \appendix
+    \input{AppendixA.tex}
     \printbibliography
 \end{document}
