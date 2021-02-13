@@ -2,6 +2,7 @@
 
 \usepackage{stfloats}
 \usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{url}
 \usepackage{xtab, booktabs}
 \usepackage{mathptmx}
 \usepackage{amsmath}
@@ -10,15 +11,15 @@
 \usepackage{subfigure}
 \usepackage{graphicx}
 \graphicspath{{images/}}
-\usepackage[backend=biber, style=gb7714-2015, citestyle=authoryear, hyperref=auto]{biblatex}
+\usepackage[backend=biber, style=gb7714-2015, hyperref=auto]{biblatex}
 \addbibresource{reference.bib}
 
 
 \newcommand\rr[1]{\textcolor{red}{#1}}
 
 
-\title{通过快速搜索和寻找密度峰进行聚类\footnote{翻译自()一文. }}
-\author{}
+\title{通过快速搜索和寻找密度峰进行聚类\footnote{翻译自\citeauthor{Rodriguez2014}(\citeyear{Rodriguez2014})一文. }}
+\author{Alex Rodriguez \and Alessandro Laio}
 \date{}
 
 
@@ -26,28 +27,19 @@
 
     \begin{titlepage}
         \maketitle
+        \input{Abs.tex}
     \end{titlepage}
 
-    % \input{Abs.tex}
 
-    % \input{Intro.tex}
+    \input{Intro.tex}
 
-    % \input{Theory.tex}
+    \input{Theory.tex}
 
-    % \input{Example.tex}
+    \input{Example.tex}
 
-    % \input{Diss.tex}
 
-    % \input{Conclusion.tex}
+    \appendix
 
-    % \appendix
-
-    % \input{Ack.tex}
-
-    % \input{AppendixA.tex}
-
-    % \input{Translate.tex}
-
-    % \printbibliography
+    \printbibliography
 
 \end{document}
