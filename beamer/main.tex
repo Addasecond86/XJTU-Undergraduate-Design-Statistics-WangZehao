@@ -5,13 +5,61 @@
 {\usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{background.png}}
 \songti
 \maketitle
-\begin{frame}[plain, standout]
-    \tableofcontents
+
+\begin{frame}
+    \frametitle{主要工作}
+    \begin{itemize}
+        \item 文献调研 \& 指定外文文献翻译; 
+        \item 相关背景知识学习; 
+        \item 聚类算法理论学习; 
+        \item 代码编写 \& 试验; 
+        \item 后续改进. 
+    \end{itemize}
 \end{frame}
 
-\input{sec1.tex}
-\input{sec2.tex}
-\input{sec3.tex}
+\begin{frame}[shrink]
+    \frametitle{文献调研}
+    \vspace{10pt}
+    通过约20篇的文献调研, 了解到以往NMO速度分析有以下几种方法: 
+    
+    \vspace{40pt}
+    \begin{center}
+        \begin{minipage}{.35\textwidth}
+            \begin{itemize}
+                \item 速度谱相似性; 
+                \item 局部地震斜率; 
+                \item 神经网络; 
+                \item 聚类. 
+            \end{itemize}
+        \end{minipage}
+    \end{center}
+\end{frame}
+
+\begin{frame}[shrink]
+    \frametitle{文献翻译}
+    \vspace{20pt}
+    对下列两篇文献进行了全文翻译. 
+
+    \vspace{20pt}
+    \citetitle{Zhang2016}\cite{Zhang2016}
+    
+    \vspace{20pt}
+    \citetitle{Rodriguez2014}\cite{Rodriguez2014}
+\end{frame}
+
+\begin{frame}
+    \frametitle{背景知识学习}
+    由于地震勘探学背景知识的缺乏, 对此书籍进行了学习: 
+
+    \vspace{20pt}
+    \fullcite{Zhou2014}\cite{Zhou2014}
+\end{frame}
+
+\printbibliography
+
+% \input{sec1.tex}
+% \input{sec2.tex}
+% \input{sec3.tex}
 
     \begin{frame}[plain,standout]
         \LARGE \emph{Thanks. }
