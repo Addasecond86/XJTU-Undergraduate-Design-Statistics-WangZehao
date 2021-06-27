@@ -1,9 +1,12 @@
+\definecolor{awesome}{rgb}{1.0, 0.13, 0.32}
+
 \usetheme[progressbar=head]{metropolis}
 \useoutertheme{infolines}
+% \useinnertheme{rounded}
 \usecolortheme{beaver}
+% \setbeamercolor{structure}{fg=awesome}
 
 \usepackage{longtable}
-% \usepackage{newtxtext,newtxmath}
 \usepackage[backend=biber,
 style=gb7714-2015, 
 gbnamefmt=lowercase, 
@@ -20,14 +23,16 @@ eprint=false]{biblatex}
 
 \usepackage[fontset = none]{ctex}
 \setsansfont{Source Han Serif SC}
-\setCJKmainfont[ BoldFont = Source Han Serif SC Heavy, ItalicFont = FangSong]{Source Han Serif SC}
-\usepackage[ruled, boxed]{algorithm2e}
+\setCJKmainfont[ BoldFont = Source Han Serif SC Heavy, ItalicFont = FangSong]{SimSun}
+\usepackage[ruled, boxed, vlined]{algorithm2e}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{subfigure}
 \usepackage{url}
-\definecolor{awesome}{rgb}{1.0, 0.13, 0.32}
+\usepackage{caption}
+\usepackage{tikz}
+\usetikzlibrary{fit,positioning}
 % \usepackage{mathptm}
 \numberwithin{equation}{section}
 \usefonttheme[onlymath]{serif}
@@ -43,3 +48,6 @@ eprint=false]{biblatex}
 \subtitle[本科毕业设计]{聚类算法在地震速度谱自动拾取中的应用研究}
 
 \graphicspath{{images/}}
+
+% \renewcommand{\footnotesize}{\tiny}
+\AtBeginBibliography{\small}
